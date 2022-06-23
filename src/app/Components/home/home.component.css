@@ -98,7 +98,7 @@ img
 }
 .header{
   margin-top: 50px;
-  margin-left: 130px;
+  margin-left: 140px;
 }
 .header-image
 {
@@ -115,4 +115,43 @@ h3
   font-weight: 700;
   letter-spacing: 0px;
   color: #333333;
+}
+.movies{
+  display: inline-flex;
+}
+.movie{
+  padding-right: 30px;
+}
+.movie-img{
+  height: 378px;
+  width: 222px;
+  padding-bottom: 15px;
+}
+.title{
+  margin: 0px 0px 4px;
+  word-break: break-word;
+  color: rgb(34, 34, 34);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.genre{
+  margin: 0px;
+  word-break: break-word;
+  color: rgb(102, 102, 102);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.footer-img{
+  width: 1260px;
+  padding-top: 100px;
+  height: 580px;
+  padding-bottom: 50px;
 }

@@ -1,0 +1,40 @@
+<div class="background">
+  <img class="background-image" src="../../../assets/Pictures/Poster/{{movie.image}}.avif" alt="MP">
+  <div class="movie-reference-image">
+    <img class="movie-img" src="../../../assets/Pictures/Movie Icons/{{movie.image}}.avif" alt="MI">
+    <div class="booking">
+      <h1 class="title">{{movie.title}}</h1>
+      <div style="margin-top: 80px;" class="rating">
+        <div>
+          <h5 style="color: white;">Add your rating and review</h5>
+          <h6 style="color: #CCCCBE;">Your Ratings matter</h6>
+        </div>
+        <button class="rate">Rate Now</button>
+      </div>
+      <div style="margin-top: 25px;" class="dimension">
+        {{movie.dimension}}
+      </div>
+      <div style="width: 60px;" class="dimension">
+        {{movie.language}}
+      </div>
+      <div class="duration">
+        {{movie.duration}} minutes . {{movie.genre}}
+      </div>
+      <div class="tickets" >
+        <button style="width: 200px;" class="book-now" routerLink="/hall/{{movie.movieId}}">Book Tickets</button>
+      </div>
+    </div>
+    <div class="share">
+      <button class="share-button">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+            <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+          </svg>
+        </span>
+        Share
+      </button>
+    </div>
+  </div>
+</div>
+
+

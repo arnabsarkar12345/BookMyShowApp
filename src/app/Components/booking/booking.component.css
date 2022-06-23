@@ -1,0 +1,19 @@
+.border{
+  padding: 20px 40px 40px 40px;
+  margin: 30px;
+  margin-right: 900px;
+}
+.form-row{
+  display: flex;
+}
+input{
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+input.invalid
+{
+  border-color: red;
+}
+button{
+  margin-top: 10px;
+}

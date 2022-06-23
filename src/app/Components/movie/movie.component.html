@@ -1,0 +1,53 @@
+<div class="border" >
+  <form novalidate autocomplete="off" #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="movieId" [value]="service.formData.movieId" />
+    <div class="form-group">
+        <label>Title</label>
+        <input class="form-control form-control-md" placeholder="Title"
+        name="movieTitle" #movieTitle="ngModel" [(ngModel)]="service.formData.title"
+        required [class.invalid]="movieTitle.invalid && movieTitle.touched">
+    </div>
+    <div class="form-group">
+        <label>Duration</label>
+        <input class="form-control form-control-md" placeholder="Duration" name="movieDuration"
+            #movieDuration="ngModel" [(ngModel)]="service.formData.duration"
+            required [class.invalid]="movieDuration.invalid && movieDuration.touched">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Language</label>
+            <input class="form-control form-control-md" placeholder="Language" name="movieLanguage"
+                #movieLanguage="ngModel" [(ngModel)]="service.formData.language"
+                required [class.invalid]="movieLanguage.invalid && movieLanguage.touched">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Dimension</label>
+            <input class="form-control form-control-md" placeholder="3D/2D" name="movieDimension"
+                #movieDimension="ngModel" [(ngModel)]="service.formData.dimension"
+                required maxlength="2" minlength="2" [class.invalid]="movieDimension.invalid && movieDimension.touched">
+        </div>
+    </div>
+    <div class="form-group">
+      <label>Genre</label>
+      <input class="form-control form-control-md" placeholder="Genre" name="movieGenre"
+          #movieGenre="ngModel" [(ngModel)]="service.formData.genre"
+          required [class.invalid]="movieGenre.invalid && movieGenre.touched">
+    </div>
+    <div class="form-group">
+      <label>Image</label>
+      <input class="form-control form-control-md" placeholder="Image Name" name="movieImage"
+          #movieImage="ngModel" [(ngModel)]="service.formData.image"
+          required [class.invalid]="movieImage.invalid && movieImage.touched">
+    </div>
+    <div class="form-group">
+      <label>Price</label>
+      <input class="form-control form-control-md" placeholder="Price" name="moviePrice"
+          #moviePrice="ngModel" [(ngModel)]="service.formData.price"
+          required [class.invalid]="moviePrice.invalid && moviePrice.touched">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-info btn-md btn-block" type="submit" [disabled]="form.invalid">SUBMIT</button>
+    </div>
+  </form>
+
+</div>
